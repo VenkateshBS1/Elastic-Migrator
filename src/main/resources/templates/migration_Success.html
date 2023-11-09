@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Migration Success</title>
+    <style type="text/css">
+    span {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+
+    </style>
+</head>
+<body>
+<div align="center">
+    <h2>Successfully Migrated Index from source Cluster to Target Cluster</h2>
+    <span>Source Cluster Name:</span><span th:text="${elasticconnection.sourceclustername}"></span><br/>
+    <span>Source Port:</span><span th:text="${elasticconnection.sourceport}"></span><br/>
+    <span>Source Scheme:</span><span th:text="${elasticconnection.sourcescheme}"></span><br/>
+    <span>Source Username:</span><span th:text="${elasticconnection.sourceusername}"></span><br/>
+    <span>Source Password:</span><span th:text="${elasticconnection.sourcepassword}"></span><br/>
+    <span>Target Cluster Name:</span><span th:text="${elasticconnection.targetclustername}"></span><br/>
+    <span>Target Port:</span><span th:text="${elasticconnection.targetport}"></span><br/>
+    <span>Target Scheme:</span><span th:text="${elasticconnection.targetscheme}"></span><br/>
+    <span>Target Username:</span><span th:text="${elasticconnection.targetusername}"></span><br/>
+    <span>Target Password:</span><span th:text="${elasticconnection.targetpassword}"></span><br/>
+    <span>Index Name:</span><span th:text="${elasticconnection.indexname}"></span><br/>
+   </div>
+</body>
+</html>
